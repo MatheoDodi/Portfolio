@@ -20,7 +20,7 @@ nav {
 }
 
 .navbar {
-	background: #3e404c;
+	background: #25282f;
 	transition:all 1.5s;
 }
 
@@ -117,6 +117,10 @@ p a:hover {
 	color: #ff676e;
 }
 
+#quote {
+	padding-top: 1rem !important;
+}
+
 .blueText {
 	color: #0788ff !important;
 }
@@ -133,13 +137,25 @@ p a:hover {
 	text-decoration: none;
 	color: inherit;
 	display: block;
+	animation-name: colors;
+	animation-duration: 0.7s;
+	animation-play-state: paused;
+	animation-fill-mode: forwards;
 }
 
 
 
 #contactLinks:hover,
 #contactLinks:active {
-	color: #ff7e07;
+	/*color: #ff7e07;*/
+	animation-play-state: running;
+
+}
+
+@keyframes colors {
+	100% {
+		color: #ff7e07;
+	}
 }
 
 #hoverEffect:hover,
@@ -169,6 +185,12 @@ small {
 }
 
 /* Media Queries !! */
+
+@media only screen and (max-width: 1650px) {
+	.spill {
+	word-wrap: break-word !important;
+}
+	}
 
 
 @media only screen and (max-width: 900px) {

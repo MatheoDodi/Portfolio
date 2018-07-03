@@ -1,166 +1,239 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120434980-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-120434980-1');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Matthew Dodi</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/resets.css">
+    <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,600,700" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark ">
-        <div class="container-fluid">
-                <a class="navbar-brand logoContainer" href="#"><img id="logo" src="images/logo.png"></a>
-                <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#myNavBar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="navbar-toggler-icon "></span>
-                </button>
-                <div class="collapse navbar-collapse" id="myNavBar">
-                    <ul class="navbar-nav ml-auto align-items-end">
-                        <li class="nav-item">
-                            <a id="logo" class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="logo" class="nav-link" href="#work">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="logo" class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-        </div>
-    </nav>
+    <!--Navigation Bar made with Bootstrap 4-->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+                    <a class="navbar-brand logoContainer" href="#"><img id="logo" src="images/logo.png"></a>
+                    <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#myNavBar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="myNavBar">
+                        <ul class="navbar-nav ml-auto align-items-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#work">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <!--End of navigation Bar-->
     <section>
+        <!--Creating the hero image-->
         <div id="heroImage">
+            <!--Adding a black semi-transparent overlay for better readability of text-->
             <div class="overlay">
+                <!--Text displayed on top of the hero image-->
                     <span class="heroText display-2">Matthew <strong class="blueText">Dodi</strong><br/>
                         <p id="heroSubText" class="mt-3">Front-end Web Developer and Web Designer</p>
                     </span>
+                <!--End of Text-->
             </div>
         </div>
+        <!--End of hero image-->
     </section>
-    <section>
-        <div id="about" class="padding">
-            <div class="container-fluid">
-                <div class="row vAlignment">
-                    <div class="col-xs-12 col-lg-5">
-                        <h1 class="display-4 subHeadings"><span class="blueText">On</span> a mission.</h1>
-                        <p class="marginTop">
-                             I've always had an unparalleled passion to <em>create</em>. It was on April 2018 when a friend of mine
-                             introduced me to web development. It was love at first sig - or should i say - at first &lt;h1&gt; tag. Ever since then, coding has been the fuel
-                            to ignite the flame. Through hard work, dedication, and self discipline, I tought myself HTML, CSS, Bootstrap and Javascript
-                            from various books and a variety of online bootcamps such as Team Treehouse, Freecodecamp, and Udemy. There may be a lot of experienced
-                            developers in the field, but I can guarantee there are few people as dedicated as me.
-                        </p>
-                    </div>
-                    <div class="col-md-1">
-                    </div>
-                    <div class="col-xs-12 col-lg-5">
-                        <img src="images/image1.jpg" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="padding">
-             <div class="container-fluid">
-                    <div class="row">
-                         <div class="col-xs-12 col-lg-10 mx-auto">
-                            <blockquote class="blockquote text-center">
-                                <p class="mb-0 quoteText">You have to love what you do. If you don't, there's always going to be someone better at it, someone that outworks you. Because <em>he</em> loves what he does.</p>
-                                <footer class="blockquote-footer">Gary Vaynerchuck</footer>
-                            </blockquote>
-                         </div>
-                    </div>
-            </div>
-        </div>
-        <div id="work" class="padding backgroundColor1">
-            <div class="container-fluid">
-                <div class="row text-center">
-                    <div class="col-xs-12 mx-auto">
-                        <h1 class="display-4 subHeadings">Creating <em><span class="blackText">something</span></em> out of nothing</h1>
-                        <p class="marginTop">Here are some of the projects I've worked on, made with a lot of  <i class="fas fa-coffee"></i> and <i class="fas fa-heart"></i>.<br/> Feel free to also visit my <a href="https://github.com/MatthewDodi" target="_blank"><i class="fab fa-github"></i> Github</a> account. 
-                        </p>
+    <main>
+        <!--Start of 'About Me' section-->
+        <section>
+            <div id="about" class="padding">  <!--The div with the class 'padding' is used because i wanted to add specific spacing around each section of the website, especially for mobile users-->
+                <div class="container-fluid">
+                    <div class="row vAlignment"> <!--class vAlignment is used to vertically align all the content of the columns-->
+                        <div class="col-xs-12 col-lg-5">
+                            <h2 class="display-4 subHeadings"><span class="blueText">On</span> a mission.</h1>
+                            <p class="marginTop"> <!-- marginTop is a class that specifies a value for margin-top (which is greater than what Bootstrap's "mt" could offer)-->
+                                 I've always had an unparalleled passion to <em>create</em>. When a friend of mine first 
+                                 introduced me to web development. It was love at first sight - or should i say - at first &lt;h1&gt; tag. Ever since then, coding has been the fuel
+                                to ignite the flame. Through hard work, dedication, and self discipline, I taught myself HTML, CSS, Bootstrap and Javascript
+                                from a series of books and a variety of online bootcamps such as Team Treehouse, freeCodeCamp, SoloLearn, Codecademy, Udemy and Udacity. I am eager to demonstrate my skills and potential!
+                            </p>
+                        </div>
+                        <!-- The empty column was added to provide spacing between the other two columns-->
+                        <div class="col-md-1">
+                        </div>
+                        <!--End of empty column-->
+                        <div class="col-xs-12 col-lg-5">
+                            <img src="images/headshot.jpg" class="img-fluid">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="padding backgroundColor2">
-            <div class="container-fluid">
-                <div class="row vAlignment">
-                    <div class="col-xs-12 col-lg-6">
-                        <a href="https://github.com/MatthewDodi/Biography-Tribute" target="_blank"><img src="images/biography.png" class="img-fluid"></a>
-                    </div>
-                    <div class="col-xs-12 col-lg-5">
-                         <h1 class="subHeadings marginTop">Tribute - Biography</h1>
-                        <p class="marginTop"> The goal of this project was to build a website that would be responsive across all platforms. Bootstrap 4 libary was used for the making of it. 
-                        </p>
-                    </div>
+            <div id="quote" class="padding">
+                 <div class="container-fluid">
+                        <div class="row">
+                             <div class="col-xs-12 col-lg-10 mx-auto">
+                                <blockquote class="blockquote text-center">
+                                    <p class="mb-0 quoteText"><em>You have to love what you do. If you don't, there's always going to be someone better at it, someone that outworks you. Because he loves what he does.</em></p>
+                                    <footer class="blockquote-footer">Gary Vaynerchuck</footer>
+                                </blockquote>
+                             </div>
+                        </div>
                 </div>
-                <div class="row vAlignment mt-5">
-                    <div class="col-xs-12 col-lg-5">
-                        <h1 class="subHeadings marginTop">Random Quote Generator</h1>
-                        <p class="marginTop">The focus of this project was the use of jQuery and JSON in order to fetch random quotes with the <em>forismatic</em> API, and once the quote was loaded, the user should also have the ability to share the quote instantly on Twitter.
-                    </div>
-                    <div class="col-xs-12 col-lg-6">
-                        <a href="https://github.com/MatthewDodi/Random-Quote-Generator" target="_blank"><img src="images/quoteGenerator.png" class="img-fluid"></a>
-                    </div>
-                </div>
-                <div class="row vAlignment mx-auto mt-5">
-                    <div class="col-xs-12">
-                        <h1 class="subHeadings marginTop text-center">And last but not <span class="blueText">least</span></h1>
-                        <p class="marginTop text-center">The very same page you're <em>on</em> right now.<br>It was made within two months of dedicated learning. Entirely handwritten with HTML, CSS, Javascript and Bootstrap 4 library.
+            </div>
+        </section>
+        <section>
+            <div id="work" class="padding backgroundColor1">
+                <div class="container-fluid">
+                    <div class="row text-center">
+                        <div class="col-xs-12 mx-auto">
+                            <h1 class="display-4 subHeadings">Creating <em><span class="blackText">something</span></em> out of nothing</h1>
+                            <p class="marginTop">Here are some of the projects I've worked on, made with a lot of  <i class="fas fa-coffee"></i> and <i class="fas fa-heart"></i>.<br/> Feel free to also visit my <a href="https://github.com/MatthewDodi" target="_blank"><i class="fab fa-github"></i> Github</a> account. 
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="contact" class="padding">
-             <div class="container-fluid">
-                <div class="row text-center">
-                    <div class="col-xs-12 mx-auto">
-                        <h1 class="display-3 subHeadings mx-auto">Let's <span class="blueText">connect</span>!</h1>
-                        <p class="marginTop">If you like my work and would like to get in touch with me, I'd love to hear from you.</p>
+            <div class="padding backgroundColor2">
+                <div class="container-fluid">
+                    <div class="row vAlignment mx-auto">
+                        <div class="col-xs-12 col-lg-5">
+                            <a href="https://matthewdodi.github.io/Biography-Tribute/" target="_blank"><img src="images/biography.png" class="img-fluid"></a>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <div class="col-xs-12 col-lg-5">
+                             <h1 class="subHeadings marginTop">Tribute - Biography</h1>
+                            <p class="marginTop"> The goal of this project was to build a website that would be responsive across all platforms. Bootstrap 4 libary was used<br> for the making of it. 
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="row vAlignment pt-5 mt-5">
-                    <div class="col-xs-12 col-lg-3 text-center mt-5 pt-3">
-                        <a id="contactLinks" href="tel:+1-949-506-9781">
-                            <i class="fas fa-mobile-alt fa-5x"></i><br>
-                            <p class="mt-4">(949) 506 - 9781</p>
-                        </a>  
+                     <div class="row vAlignment mt-5 mx-auto">
+                        <div class="col-xs-12 col-lg-6 pl-5 order-sm-12">
+                            <a href="https://matthewdodi.github.io/Taco-Place-mock-up-website-CSS-GRID/" target="_blank"><img src="images/taco.png" class="img-fluid"></a>
+                        </div>
+                        <div class="col-xs-12 col-lg-5 order-sm-1">
+                            <h1 class="subHeadings marginTop">Taco Place Mock-Up Website</h1>
+                            <p class="marginTop">This project was made entirelly using CSS Grid for the layout. The challenge of it was to try to make it fully responsive while using as little media queries as possible.
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-lg-3 text-center mt-5 pt-3">
-                        <a id="contactLinks" href="https://www.linkedin.com/in/matthew-dodi-717243158/" target="_blank">
-                            <i class="fab fa-linkedin-in fa-5x"></i><br>
-                            <p class="mt-4">Matthew Dodi</p>
-                        </a>
+                    <div class="row vAlignment mx-auto mt-5">
+                        <div class="col-xs-12 col-lg-5">
+                            <a href="https://matthewdodi.github.io/Weather-App/" target="_blank"><img src="images/weather-app.png" class="img-fluid"></a>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <div class="col-xs-12 col-lg-5">
+                             <h1 class="subHeadings marginTop">Weather Now</h1>
+                            <p class="marginTop"> Website application that displays the current weather of a destination that has been inputted by the user. Open Weather API was used to get the required data. Also, depending on the temprature displayed, the background image changes accordingly.
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-lg-3 text-center mt-5 pt-3">
-                        <a id="contactLinks" href="mailto:matthew.dodi@gmail.com">
-                            <i class="far fa-envelope fa-5x"></i><br>
-                           <p class="mt-4"> matthew.dodi@gmail.com </p>
-                        </a> 
+                    <div class="row vAlignment mt-5 mx-auto">
+                        <div class="col-xs-12 col-lg-6 pl-5 order-sm-12">
+                            <a href="https://matthewdodi.github.io/Random-Quote-Generator/" target="_blank"><img src="images/quoteGenerator.png" class="img-fluid"></a>
+                        </div>
+                        <div class="col-xs-12 col-lg-5">
+                            <h1 class="subHeadings marginTop order-sm-1">Random Quote Generator</h1>
+                            <p class="marginTop">The focus of this project was the use of jQuery and JSON in order to fetch random quotes with the <em>forismatic</em> API, and once the quote was loaded, the user should also have the ability to share the quote instantly on Twitter.
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-lg-3 text-center mt-5 pt-3">
-                        <a id="contactLinks" href="https://www.instagram.com/matthewdodi/" target="_blank">
-                            <i class="fab fa-instagram fa-5x"></i><br>
-                            <p class="mt-4">@matthewdodi</p>
-                        </a>
+                    <div class="row vAlignment mx-auto mt-5">
+                        <div class="col-xs-12 col-lg-5">
+                            <a href="https://matthewdodi.github.io/Udacity-Second-Project/" target="_blank"><img src="images/memoryGame.png" class="img-fluid"></a>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <div class="col-xs-12 col-lg-5">
+                             <h1 class="subHeadings marginTop">Memory Game</h1>
+                            <p class="marginTop"> Second assignment for Udacity's Front End Developer Nanodegree Program. In this project, a memory game was created with 16 cards of 8 different images. The goal was to match two equal cards, have them stay open, and to continue this way until all cards have been matched together or until the user runs out of tries. Made with HTML, CSS and JQuery.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row vAlignment mt-5 mx-auto">
+                        <div class="col-xs-12 col-lg-6 pl-5 order-sm-12">
+                            <a href="https://matthewdodi.github.io/Move-Planner-App/" target="_blank"><img src="images/move-planner.png" class="img-fluid"></a>
+                        </div>
+                        <div class="col-xs-12 col-lg-5 order-sm-1">
+                            <h1 class="subHeadings marginTop">Move Planner App</h1>
+                            <p class="marginTop">The goal of this project was to utilize three different <em>APIs</em> as well as different AJAX calls. The first API used was Google Street View API to present street images depending on user's input destination. Secondly, the New York Times Articles API was used to show articles relevant to that destination. And lastly, Wikipedia API was used to present relevant links of that user input.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section>
+            <div id="contact" class="padding">
+                <div class="container-fluid">
+                    <div class="row text-center">
+                        <div class="col-xs-12 mx-auto">
+                            <h1 class="display-3 subHeadings mx-auto">Let's <span class="blueText">connect</span>!</h1>
+                            <p class="marginTop">If you like my work and would like to get in touch with me, I'd love to hear from you.</p>
+                        </div>
+                    </div>
+                    <div class="row vAlignment pt-5 mt-5">
+                        <div class="col-xs-12 col-lg-2 text-center mt-5 pt-3">
+                            <a id="contactLinks" href="tel:+1-949-506-9781">
+                                <i class="fas fa-mobile-alt fa-5x"></i><br>
+                                <p class="mt-4">(949) 506 - 9781</p>
+                            </a>  
+                        </div>
+                        <div class="col-xs-12 col-lg-2 text-center mt-5 pt-3">
+                            <a id="contactLinks" href="https://www.linkedin.com/in/matthew-dodi-717243158/" target="_blank">
+                                <i class="fab fa-linkedin-in fa-5x"></i><br>
+                                <p class="mt-4">Matthew Dodi</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-lg-2 text-center mt-5 pt-3 spill">
+                            <a id="contactLinks" href="mailto:matthew.dodi@gmail.com">
+                                <i class="far fa-envelope fa-5x"></i><br>
+                               <p class="mt-4"> matthew.dodi@gmail.com </p>
+                            </a> 
+                        </div>
+                        <div class="col-xs-12 col-lg-2 text-center mt-5 pt-3 spill">
+                            <a id="contactLinks" href="https://www.instagram.com/matthewdodi/" target="_blank">
+                                <i class="fab fa-instagram fa-5x"></i><br>
+                                <p class="mt-4">@matthewdodi</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-lg-2 text-center mt-5 pt-3">
+                            <a id="contactLinks" href="https://github.com/MatthewDodi" target="_blank">
+                                <i class="fab fa-github fa-5x"></i><br>
+                                <p class="mt-4">MatthewDodi</p>
+                            </a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="p-4 backgroundColor2 text-center">
             <small>&copy; Copyright 2018, Matthew Dodi</small>
         </div>
     </footer>
-    <script src="JS/scripts.js"></script>
+    <script src="JS/script.js"></script>
   </body>
 </html>
