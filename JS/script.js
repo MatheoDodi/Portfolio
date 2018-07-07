@@ -9,7 +9,7 @@ function Scroll() {
 		color.style.background = "#171a21";
 	} else {
 		navBar.style.width = "125%";
-		color.style.background = "#25282f";
+		color.style.background = "rgba(0,0,0,0)";
 
 	}
 }
