@@ -20,6 +20,7 @@ nav {
 }
 
 .navbar {
+	display: none;
 	background: rgba(0,0,0,0);
 	transition:all 0.75s;
 }
@@ -54,14 +55,28 @@ nav .navbar-nav li a:active{
 	color: white !important;
 }
 
+#particles-js {
+	width: 100%;
+	height: 70vh;
+	position: absolute;
+	top: 0;
+	z-index: 30;
+}
+
+.particles-js-canvas-el {
+	height: 100vh;
+}
+
 .overlay {
 	background-color: rgba(0,0,0,.65);
 	height: 100%;
 	width: 100%;
-	display: table;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#heroImage {
+#header {
 	width: 100%;
 	background: url("../images/hero.jpg");
 	height: 70vh;
@@ -75,11 +90,12 @@ nav .navbar-nav li a:active{
 }
 
 .heroText {
-	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
 	color: white;
 	font-weight: 200 !important;
+	top: 50%;
+	left: 25%;
 }
 
 .heroText > strong {
@@ -202,8 +218,8 @@ small {
 		width: 100% !important;
 	}
 
-	#heroSubText {
-		font-size: 1.5rem !important;
+	.heroText {
+		font-size: 4rem !important;
 	}
 
 	.navbar {
