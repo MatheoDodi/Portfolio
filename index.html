@@ -52,7 +52,7 @@
         </nav>
     </header>
     <!--End of navigation Bar-->
-    <section>
+    <section class="fade-scroll">
         <!--Creating the hero image-->
         <div id="heroImage">
             <!--Adding a black semi-transparent overlay for better readability of text-->
@@ -71,7 +71,7 @@
         <section>
             <div id="about" class="padding">  <!--The div with the class 'padding' is used because i wanted to add specific spacing around each section of the website, especially for mobile users-->
                 <div class="container-fluid">
-                    <div class="row vAlignment"> <!--class vAlignment is used to vertically align all the content of the columns-->
+                    <div class="row vAlignment "> <!--class vAlignment is used to vertically align all the content of the columns-->
                         <div class="col-xs-12 col-lg-5">
                             <h2 class="display-4 subHeadings"><span class="blueText">On</span> a mission.</h1>
                             <p class="marginTop"> <!-- marginTop is a class that specifies a value for margin-top (which is greater than what Bootstrap's "mt" could offer)-->
@@ -90,21 +90,23 @@
                     </div>
                 </div>
             </div>
-            <div id="quote" class="padding">
-                 <div class="container-fluid">
-                        <div class="row">
-                             <div class="col-xs-12 col-lg-10 mx-auto">
-                                <blockquote class="blockquote text-center">
-                                    <p class="mb-0 quoteText"><em>You have to love what you do. If you don't, there's always going to be someone better at it, someone that outworks you. Because he loves what he does.</em></p>
-                                    <footer class="blockquote-footer">Gary Vaynerchuck</footer>
-                                </blockquote>
-                             </div>
-                        </div>
+            <div class="">
+                <div id="quote" class="padding">
+                    <div class="container-fluid">
+                            <div class="row">
+                                <div class=" col-xs-12 col-lg-10 mx-auto">
+                                    <blockquote class="blockquote text-center">
+                                        <p class="mb-0 quoteText"><em>You have to love what you do. If you don't, there's always going to be someone better at it, someone that outworks you. Because he loves what he does.</em></p>
+                                        <footer class="blockquote-footer">Gary Vaynerchuck</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section>
-            <div id="work" class="padding backgroundColor1">
+            <div id="work" class=" padding backgroundColor1">
                 <div class="container-fluid">
                     <div class="row text-center">
                         <div class="col-xs-12 mx-auto">
@@ -117,7 +119,7 @@
             </div>
             <div class="padding backgroundColor2">
                 <div class="container-fluid">
-                    <div class="row vAlignment mx-auto">
+                    <div class=" row vAlignment mx-auto">
                         <div class="col-xs-12 col-lg-5">
                             <a href="https://matthewdodi.github.io/Biography-Tribute/" target="_blank"><img src="images/biography.png" class="img-fluid"></a>
                         </div>
@@ -129,16 +131,16 @@
                             </p>
                         </div>
                     </div>
-                     <div class="row vAlignment mt-5 mx-auto">
+                     <div class=" row vAlignment mt-5 mx-auto">
                         <div class="col-xs-12 col-lg-6 pl-5 order-sm-12">
                             <a href="https://matthewdodi.github.io/Taco-Place-mock-up-website-CSS-GRID/" target="_blank"><img src="images/taco.png" class="img-fluid"></a>
                         </div>
                         <div class="col-xs-12 col-lg-5 order-sm-1">
                             <h1 class="subHeadings marginTop">Taco Place Mock-Up Website</h1>
-                            <p class="marginTop">This project was made entirelly using CSS Grid for the layout. The challenge of it was to try to make it fully responsive while using as little media queries as possible.
+                            <p class="marginTop">This project was made entirely using CSS Grid for the layout. The challenge of it was to try to make it fully responsive while using as little media queries as possible.
                         </div>
                     </div>
-                    <div class="row vAlignment mx-auto mt-5">
+                    <div class=" row vAlignment mx-auto mt-5">
                         <div class="col-xs-12 col-lg-5">
                             <a href="https://matthewdodi.github.io/Weather-App/" target="_blank"><img src="images/weather-app.png" class="img-fluid"></a>
                         </div>
@@ -150,7 +152,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row vAlignment mt-5 mx-auto">
+                    <div class=" row vAlignment mt-5 mx-auto">
                         <div class="col-xs-12 col-lg-6 pl-5 order-sm-12">
                             <a href="https://matthewdodi.github.io/Random-Quote-Generator/" target="_blank"><img src="images/quoteGenerator.png" class="img-fluid"></a>
                         </div>
@@ -159,7 +161,7 @@
                             <p class="marginTop">The focus of this project was the use of jQuery and JSON in order to fetch random quotes with the <em>forismatic</em> API, and once the quote was loaded, the user should also have the ability to share the quote instantly on Twitter.
                         </div>
                     </div>
-                    <div class="row vAlignment mx-auto mt-5">
+                    <div class=" row vAlignment mx-auto mt-5">
                         <div class="col-xs-12 col-lg-5">
                             <a href="https://matthewdodi.github.io/Udacity-Second-Project/" target="_blank"><img src="images/memoryGame.png" class="img-fluid"></a>
                         </div>
@@ -171,7 +173,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row vAlignment mt-5 mx-auto">
+                    <div class=" row vAlignment mt-5 mx-auto">
                         <div class="col-xs-12 col-lg-6 pl-5 order-sm-12">
                             <a href="https://matthewdodi.github.io/Move-Planner-App/" target="_blank"><img src="images/move-planner.png" class="img-fluid"></a>
                         </div>
@@ -180,15 +182,37 @@
                             <p class="marginTop">The goal of this project was to utilize three different <em>APIs</em> as well as different AJAX calls. The first API used was Google Street View API to present street images depending on user's input destination. Secondly, the New York Times Articles API was used to show articles relevant to that destination. And lastly, Wikipedia API was used to present relevant links of that user input.</p>
                         </div>
                     </div>
-                    <div class="row vAlignment mx-auto mt-5">
+                    <div class=" row vAlignment mx-auto mt-5">
                         <div class="col-xs-12 col-lg-5">
                             <a href="https://matthewdodi.github.io/Arcade-Game-Clone/" target="_blank"><img src="images/arcadeGame.png" class="img-fluid"></a>
                         </div>
                         <div class="col-lg-1">
                         </div>
                         <div class="col-xs-12 col-lg-5">
-                             <h1 class="subHeadings marginTop">Memory Game</h1>
+                             <h1 class="subHeadings marginTop">Arcade Game Clone</h1>
                             <p class="marginTop"> This is the third project of Udacity's Front End Nanodegree Program. The project is based on the arcade game Frogger by Konami. Used HTML Canvas  API to generate graphics via scripting in JavaScript. Heavy focus and implementation of Object Oriented Programming 
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" row vAlignment mt-5 mx-auto">
+                        <div class="col-xs-12 col-lg-6 pl-5 order-sm-12">
+                            <a href="https://matthewdodi.github.io/Todo-App/" target="_blank"><img src="images/to-do-app.png" class="img-fluid"></a>
+                        </div>
+                        <div class="col-xs-12 col-lg-5 order-sm-1">
+                            <h1 class="subHeadings marginTop">To-Do App</h1>
+                            <p class="marginTop">Created a To Do app while using plain, vanilla JavaScript. No Libraries, no frameworks. Clicking a task marks it as Completed. Clicking on the Completed tab shows all the tasks that have been completed so far. Clicking on the Active tab shows tasks that have not been completed yet.</p>
+                        </div>
+                    </div>
+                    <div class=" row vAlignment mx-auto mt-5">
+                        <div class="col-xs-12 col-lg-5">
+                            <a href="https://react-calculator-app.herokuapp.com/" target="_blank"><img src="images/react-calculator-app.png" class="img-fluid"></a>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <div class="col-xs-12 col-lg-5">
+                             <h1 class="subHeadings marginTop">React Calculator App</h1>
+                            <p class="marginTop">
+                                Web application made entirely in React. Styled-Components was used for styling all the React Components. CSS Grid was implemented for the layout.
                             </p>
                         </div>
                     </div>
@@ -198,38 +222,38 @@
         <section>
             <div id="contact" class="padding">
                 <div class="container-fluid">
-                    <div class="row text-center">
+                    <div class=" row text-center">
                         <div class="col-xs-12 mx-auto">
                             <h1 class="display-3 subHeadings mx-auto">Let's <span class="blueText">connect</span>!</h1>
                             <p class="marginTop">If you like my work and would like to get in touch with me, I'd love to hear from you.</p>
                         </div>
                     </div>
                     <div class="row vAlignment pt-5 mt-5">
-                        <div class="col-xs-12 col-lg-2 text-center mt-5 pt-3">
+                        <div class=" col-xs-12 col-lg-2 text-center mt-5 pt-3">
                             <a id="contactLinks" href="tel:+1-949-506-9781">
                                 <i class="fas fa-mobile-alt fa-5x"></i><br>
                                 <p class="mt-4">(949) 506 - 9781</p>
                             </a>  
                         </div>
-                        <div class="col-xs-12 col-lg-2 text-center mt-5 pt-3">
+                        <div class=" col-xs-12 col-lg-2 text-center mt-5 pt-3">
                             <a id="contactLinks" href="https://www.linkedin.com/in/matthew-dodi-717243158/" target="_blank">
                                 <i class="fab fa-linkedin-in fa-5x"></i><br>
                                 <p class="mt-4">Matthew Dodi</p>
                             </a>
                         </div>
-                        <div class="col-xs-12 col-lg-2 text-center mt-5 pt-3 spill">
+                        <div class=" col-xs-12 col-lg-2 text-center mt-5 pt-3 spill">
                             <a id="contactLinks" href="mailto:matthew.dodi@gmail.com">
                                 <i class="far fa-envelope fa-5x"></i><br>
                                <p class="mt-4"> matthew.dodi@gmail.com </p>
                             </a> 
                         </div>
-                        <div class="col-xs-12 col-lg-2 text-center mt-5 pt-3 spill">
+                        <div class=" col-xs-12 col-lg-2 text-center mt-5 pt-3 spill">
                             <a id="contactLinks" href="https://www.instagram.com/matthewdodi/" target="_blank">
                                 <i class="fab fa-instagram fa-5x"></i><br>
                                 <p class="mt-4">@matthewdodi</p>
                             </a>
                         </div>
-                        <div class="col-xs-12 col-lg-2 text-center mt-5 pt-3">
+                        <div class=" col-xs-12 col-lg-2 text-center mt-5 pt-3">
                             <a id="contactLinks" href="https://github.com/MatthewDodi" target="_blank">
                                 <i class="fab fa-github fa-5x"></i><br>
                                 <p class="mt-4">MatthewDodi</p>

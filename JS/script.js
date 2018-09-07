@@ -26,4 +26,24 @@ $("a").on('click', function(event) {
    
       });
     }
-  });
+	});
+	
+$(function () {
+
+	const $document = $(document);
+		let fadeElem = $('.fade-scroll');
+
+
+
+		$document.on('scroll', function() {
+			const currScrollPos = $document.scrollTop();
+
+			fadeElem.each(function() {
+				const $this = $(this);
+				elementOffsetTop = $this.offset().top;
+
+				if (currScrollPos > elementOffsetTop) $this.css({'opacity': 1 -(currScrollPos-elementOffsetTop)/350});
+			} )
+		})
+
+})

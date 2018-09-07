@@ -184,6 +184,10 @@ small {
 	color: #e9e9e9;
 }
 
+.fade-scroll {
+	transition: all 1.5s ease-in-out;
+}
+
 /* Media Queries !! */
 
 @media only screen and (max-width: 1650px) {
