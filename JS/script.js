@@ -1,3 +1,5 @@
+
+
 window.addEventListener("scroll", Scroll);
 
 function Scroll() {
@@ -47,3 +49,12 @@ $(function () {
 		})
 
 })
+
+var typed = new Typed('#typed', {
+	strings: ['Matthew Dodi.', 'a Web Developer.', 'a Web Designer.'],
+	typeSpeed: 80,
+	backSpeed: 40,
+	backDelay: 1400,
+	smartBackspace: false,
+	loop: true
+  });

@@ -202,8 +202,8 @@ small {
 		width: 100% !important;
 	}
 
-	#heroSubText {
-		font-size: 1.5rem !important;
+	.heroText {
+		font-size: 4rem !important;
 	}
 
 	.navbar {
