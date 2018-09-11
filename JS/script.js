@@ -50,6 +50,36 @@ $(function () {
 
 })
 
+const langContainer = document.getElementById('langContainer');
+const languages = document.querySelectorAll('.languages');
+
+languages.forEach(item => {
+	item.addEventListener('mouseover', () => {
+		item.classList.add('hovered');
+		setTimeout(() => item.classList.remove('hovered'), 2000);
+	})
+})
+
+languages.forEach(item => {
+	item.addEventListener('click', () => {
+		item.classList.add('hovered');
+	})
+})
+
+window.onscroll = function() {
+	if (checkVisible(langContainer)) {
+		languages.forEach(elm => {elm.style.opacity = '1'})
+	} else {
+		languages.forEach(elm => elm.style.opacity = '0')
+	}
+  };
+  
+  function checkVisible(elm) {
+	var rect = elm.getBoundingClientRect();
+	var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+	return !(rect.bottom < 0 || rect.top - viewHeight >= -350);
+  }
+
 var typed = new Typed('#typed', {
 	strings: ['Matthew Dodi', 'a Web Developer', 'a Web Designer'],
 	typeSpeed: 80,
