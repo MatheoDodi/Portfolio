@@ -68,16 +68,16 @@ languages.forEach(item => {
 
 window.onscroll = function() {
 	if (checkVisible(langContainer)) {
-		languages.forEach(elm => {elm.style.opacity = '1'})
+		langContainer.style.opacity = '1'
 	} else {
-		languages.forEach(elm => elm.style.opacity = '0')
+		langContainer.style.opacity = '0'
 	}
   };
   
   function checkVisible(elm) {
 	var rect = elm.getBoundingClientRect();
 	var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-	return !(rect.bottom < 0 || rect.top - viewHeight >= -350);
+	return !(rect.bottom < 0 || rect.top - viewHeight >= -280);
   }
 
 var typed = new Typed('#typed', {
